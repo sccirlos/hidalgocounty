@@ -399,6 +399,16 @@ h6, .h6 {
 
 /*sonya added css here for navbar*/
 
+.nav {
+  height: 64px;
+  position: fixed;
+  z-index: 101;
+  border-bottom: 1px solid #a71d2a;
+  transition: background-color 0.5s ease;
+  background-color: #ed969e;
+  top: 0px;
+}
+
 .logoNavWrap div {
   display: table-cell;
 }
@@ -424,6 +434,25 @@ h6, .h6 {
   top: -27px;
   transition: top 0.5s ease;
 }
+
+.top-menu-btn {
+  padding: 0.51em;
+  font-size: 18px;
+  color: #a71d2a;
+  float: left;
+  border-radius: 50%;
+  margin: .6em;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  transition: 0.3s;
+
+}
+
+
+
+
+
 
 
 .lead {
