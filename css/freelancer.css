@@ -520,29 +520,27 @@ h6, .h6 {
 	top:1px;
 }
 
-.grid-container {
-  padding-right: .625rem;
-  padding-left: .625rem;
-  margin-top: 200px;
-  
-  
-
+img #hc-image {
+  height:440px;
 }
 
-.main-pic {
-  margin-left: 500px;
-
+.grid-jumbotron {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
+  grid-gap: 10px;
 }
 
+#grid-jumbotron-graphic {
+  grid-column:3/4;
+}
 
+#grid-jumbotron-graphic img {
+  height:515px;
+}
 
-
-
-
-
-
-
-
+#grid-jumbotron-map {
+  grid-column:2/3;
+}
 
 .lead {
   font-size: 1.25rem;
