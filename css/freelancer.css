@@ -10,7 +10,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-:root {
+ :root {
   --white: #FFFFFF;
   --blue: #007bff;
   --indigo: #6610f2;
@@ -208,6 +208,13 @@ img {
   border-style: none;
 }
 
+img#nav-img {
+  position: center;
+  margin-top: 10px;
+ 
+
+}
+
 svg {
   overflow: hidden;
   vertical-align: middle;
@@ -399,55 +406,133 @@ h6, .h6 {
 
 /*sonya added css here for navbar*/
 
-.nav {
-  height: 64px;
-  position: fixed;
-  z-index: 101;
-  border-bottom: 1px solid #a71d2a;
+.fixed-nav-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 80px;
   transition: background-color 0.5s ease;
-  background-color: #ed969e;
-  top: 0px;
+  background-color: transparent;
+
 }
 
 .logoNavWrap div {
-  display: table-cell;
+  display: inline-table;
+
 }
 
+.Logo {
+  position: absolute;
+  /* top: 10px; */
+  /* left: 100px; */
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.Float-Menu {
+  margin-top: -20px;
+  right: 50%;
+  margin-right: 400px;
+  z-index: 10;
+  overflow: hidden;
+  float: right;
+}
+ 
+.Float-Menu ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+}
+.Float-Menu ul li a {
+  padding: 1.6em;
+  font-size: 14px;
+  color: rgba(75, 6, 6, 0.838);
+  left: 40%;
+  border-radius: 20%;
+  margin: .6em;
+  width: 90px;
+  height: 50px;
+  text-align: center;
+  transition: 0.3s;
+}
+.Float-Menu ul li{
+  display: inline-block;
+}
 
 .logoNavWrap {
-  left: 50%;
+  left: 20%;
   position: absolute;
   color: #fff;
-  display: table;
-  font-size: 2.1rem;
+  display: block;
+  /* font-size: 2.1rem; */
   padding: 0;
-  margin-top: 10px;
+  margin-top: 0px;
   margin-left: -138px;
   z-index: 1;
+  word-wrap: break-word;
 }
 
-.logoLeft, .logoRight {
+.logoRight {
   font-size: 20px;
   font-weight:bold;
   color: #800c27;
-  position: relative;
+  margin-left: 250px;
+  padding-top: 25px;
   top: -27px;
   transition: top 0.5s ease;
 }
 
 .top-menu-btn {
   padding: 0.51em;
-  font-size: 18px;
+  font-size: 24px;
   color: #a71d2a;
   float: left;
   border-radius: 50%;
   margin: .6em;
-  width: 24px;
-  height: 24px;
+  width: 50px;
+  height: 50px;
   text-align: center;
   transition: 0.3s;
 
 }
+.nav_link1 {
+
+  min-width: 1%;
+  font-size: .8125rem;
+  letter-spacing: .0625em;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  
+}
+.nav_link1:hover {
+  background-color: #ffffff;
+  text-decoration: none;
+  color: #a71d2a;
+  
+}
+.nav_link1:active {
+	position:absolute;
+	top:1px;
+}
+
+.grid-container {
+  padding-right: .625rem;
+  padding-left: .625rem;
+}
+
+.main-pic {
+  margin-left: 500px;
+
+}
+
+
+
+
 
 
 
@@ -612,7 +697,7 @@ pre code {
 }
 
 .container {
-  /* width: 100%; */
+  width: 50%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -640,6 +725,13 @@ pre code {
 @media (min-width: 500px) {
   .container {
     max-width: 700px;
+  }
+}
+
+@media (min-width: 75em) {
+  .mobile-inset { 
+    padding-left: initial;
+    padding-right: initial;
   }
 }
 
@@ -6507,7 +6599,7 @@ button.bg-dark:focus {
 }
 
 .d-flex {
-  display: flex !important;
+  /* display: flex !important; */
 }
 
 .d-inline-flex {
@@ -6803,8 +6895,8 @@ button.bg-dark:focus {
   align-content: flex-end !important;
 }
 
-.align-content-center {
-  align-content: center !important;
+.align-content-right {
+  align-content: right !important;
 }
 
 .align-content-between {
@@ -9332,7 +9424,7 @@ button.bg-dark:focus {
 }
 
 .text-center {
-  text-align: center !important;
+  text-align: left !important;
 }
 
 @media (min-width: 576px) {
